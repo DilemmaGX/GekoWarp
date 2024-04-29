@@ -311,7 +311,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* Base styles used by Scratch https://github.com/LLK/scratch-www/blob/develop/src/main.scss */\n\nh1,\nh2,\nh3,\nh4,\nh5,\np {\n    margin: 0;\n    padding: 0;\n    border: 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-weight: bold;\n    line-height: 1.7em;\n}\n\nh1 {\n    font-weight: 2.5rem;\n}\n\nh2 {\n    font-weight: 2rem;\n}\n\nh3 {\n    font-size: 1.4rem;\n}\n\nh4 {\n    font-size: 1rem;\n}\n\na {\n    color: var(--link-color);\n    cursor: pointer;\n    text-decoration: underline;\n}\n\n.interface_container_1cGgE {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    background-color: var(--page-background);\n}\n\n.interface_editor_3WnQ8 {\n    height: 100%;\n}\n\n.interface_editor_3WnQ8 .interface_center_2vEJw {\n    height: 100%;\n}\n\n.interface_player-only_1YGqr .interface_center_2vEJw {\n    margin: auto;\n}\n\n.interface_menu_2TZCG {\n    margin-bottom: 8px;\n}\n\n.interface_section_3f_bi {\n    margin: 8px 0 8px 0;\n}\n\n.interface_footer_vF3nx {\n    padding: 10px 0;\n    margin-top: 10px;\n    border-top: 2px solid var(--ui-black-transparent);\n}\n\n.interface_footer_vF3nx a {\n    font-weight: bold;\n    text-decoration: none;\n}\n\n.interface_footer-content_2-VDh {\n    max-width: 600px;\n    margin: auto;\n}\n\n.interface_footer-text_2qZPP {\n    text-align: center;\n    margin: 5px 0 10px 0;\n}\n\n.interface_footer-columns_22Cpb {\n    display: flex;\n    justify-content: center;\n    justify-items: center;\n    flex-wrap: wrap;\n}\n\n.interface_footer-section_vgGzW {\n    display: flex;\n    flex-direction: column;\n    width: 200px;\n    margin-bottom: 10px;\n}\n\n.interface_footer-section_vgGzW > * {\n    margin-bottom: 10px;\n}\n\n.interface_infobox_KQp6d {\n    line-height: 1.5em;\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border-radius: 0.5rem;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n}\n\n.interface_infobox_KQp6d p {\n    margin: 4px 0;\n}\n\n.interface_infobox_KQp6d a {\n    font-weight: bold;\n    text-decoration: none;\n}\n\n.interface_unshared-update_zPoHa {\n    border-color: #ff52526e;\n    background-color: #ff525240;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* Base styles used by Scratch https://github.com/LLK/scratch-www/blob/develop/src/main.scss */\n\nh1,\nh2,\nh3,\nh4,\nh5,\np {\n    margin: 0;\n    padding: 0;\n    border: 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-weight: bold;\n    line-height: 1.7em;\n}\n\nh1 {\n    font-weight: 2.5rem;\n}\n\nh2 {\n    font-weight: 2rem;\n}\n\nh3 {\n    font-size: 1.4rem;\n}\n\nh4 {\n    font-size: 1rem;\n}\n\na {\n    color: var(--link-color);\n    cursor: pointer;\n    text-decoration: underline;\n}\n\n.interface_container_1cGgE {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    background-color: var(--page-background);\n}\n\n.interface_editor_3WnQ8 {\n    height: 100%;\n}\n\n.interface_editor_3WnQ8 .interface_center_2vEJw {\n    height: 100%;\n}\n\n.interface_player-only_1YGqr .interface_center_2vEJw {\n    margin: auto;\n}\n\n.interface_menu_2TZCG {\n    margin-bottom: 8px;\n}\n\n.interface_section_3f_bi {\n    margin: 8px 0 8px 0;\n}\n\n.interface_footer_vF3nx {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    padding: 10px 0;\n    margin-top: 10px;\n    border-top: 2px solid var(--ui-black-transparent);\n}\n\n.interface_footer_vF3nx a {\n    font-weight: bold;\n    text-decoration: none;\n}\n\n.interface_footer-content_2-VDh {\n    max-width: 600px;\n    margin: auto;\n}\n\n.interface_footer-text_2qZPP {\n    text-align: center;\n    margin: 5px 0 10px 0;\n}\n\n.interface_footer-columns_22Cpb {\n    text-align: center;\n    display: flex;\n    justify-content: center;\n    justify-items: center;\n    flex-wrap: wrap;\n}\n\n.interface_footer-section_vgGzW {\n    display: flex;\n    flex-direction: column;\n    width: 200px;\n    margin-bottom: 10px;\n}\n\n.interface_footer-section_vgGzW > * {\n    margin-bottom: 10px;\n}\n\n.interface_infobox_KQp6d {\n    line-height: 1.5em;\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border-radius: 0.5rem;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n}\n\n.interface_infobox_KQp6d p {\n    margin: 4px 0;\n}\n\n.interface_infobox_KQp6d a {\n    font-weight: bold;\n    text-decoration: none;\n}\n\n.interface_unshared-update_zPoHa {\n    border-color: #ff52526e;\n    background-color: #ff525240;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -2233,6 +2233,37 @@ if (_addons_channels__WEBPACK_IMPORTED_MODULE_23__["default"].changeChannel) {
   });
 }
 Object(_addons_entry__WEBPACK_IMPORTED_MODULE_25__["default"])();
+const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("footer", {
+  className: _interface_css__WEBPACK_IMPORTED_MODULE_27___default.a.footer
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  className: _interface_css__WEBPACK_IMPORTED_MODULE_27___default.a.footerContent
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  className: _interface_css__WEBPACK_IMPORTED_MODULE_27___default.a.footerColumns
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  className: _interface_css__WEBPACK_IMPORTED_MODULE_27___default.a.footerSection
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "credits.html"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"], {
+  defaultMessage: "Credits",
+  id: "tw.footer.credits"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "privacy.html"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"], {
+  defaultMessage: "Privacy Policy",
+  id: "tw.privacy"
+}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  className: _interface_css__WEBPACK_IMPORTED_MODULE_27___default.a.footerSection
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "https://github.com/DilemmaGX/GekoWarp/issues/new"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"], {
+  defaultMessage: "Feedback & Bugs",
+  id: "tw.feedback"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "https://github.com/DilemmaGX/scratch-gui"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"], {
+  defaultMessage: "Source Code",
+  id: "tw.code"
+}))))));
 class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
     super(props);
@@ -2331,7 +2362,7 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       instructions: description.instructions,
       credits: description.credits,
       projectId: projectId
-    })) : null) : null), isHomepage);
+    })) : null) : null), isHomepage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Footer, null));
   }
 }
 Interface.propTypes = {

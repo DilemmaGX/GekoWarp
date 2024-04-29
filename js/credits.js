@@ -1673,9 +1673,6 @@ Object(_app_target__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/react_
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
 const shuffle = list => {
   for (let i = list.length - 1; i > 0; i--) {
     const random = Math.floor(Math.random() * (i + 1));
