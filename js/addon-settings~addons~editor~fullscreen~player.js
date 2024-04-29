@@ -1075,13 +1075,13 @@ const manifest = {
     "name": "Default fill color",
     "id": "fill",
     "type": "color",
-    "default": "#9966FF"
+    "default": "#5689ff"
   }, {
     "dynamic": true,
     "name": "Default outline color",
     "id": "stroke",
     "type": "color",
-    "default": "#000000"
+    "default": "#35559f"
   }, {
     "dynamic": true,
     "name": "Default outline size",

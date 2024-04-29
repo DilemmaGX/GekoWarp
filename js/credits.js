@@ -252,10 +252,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
 const guiColors = {
-  'looks-secondary': 'hsla(215, 100%, 65%, 1)',
-  'looks-transparent': 'hsla(215, 100%, 65%, 0.35)',
-  'looks-light-transparent': 'hsla(215, 100%, 65%, 0.15)',
-  'looks-secondary-dark': 'hsla(215, 60%, 50%, 1)'
+  'looks-secondary': 'rgba(86,137,255,1)',
+  'looks-transparent': 'rgba(86,137,255,0.35)',
+  'looks-light-transparent': 'rgba(86,137,255,0.15)',
+  'looks-secondary-dark': 'rgba(53,66,142,1)'
 };
 const blockColors = {};
 
