@@ -289,7 +289,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.project-input_input_1gT4y {\n    border: none;\n    width: 100%;\n    font-size: 23px;\n    line-height: 32px;\n    opacity: 0.5;\n    background-color: transparent;\n    color: inherit;\n}\n\n.project-input_input_1gT4y:focus {\n    opacity: 1;\n}\n\n.project-input_input_1gT4y:disabled {\n    opacity: 0.8;\n}\n\n.project-input_tooltip_3y9t4 {\n    opacity: 1 !important;\n    background-color: var(--extensions-primary) !important;\n    border: 1px solid var(--ui-black-transparent) !important;\n    box-shadow: 0 0 .5rem var(--shadow) !important;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\n    z-index: 491 !important;\n}\n\n.project-input_tooltip_3y9t4:after {\n    border-top-color: var(--extensions-primary) !important;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.project-input_input_1gT4y {\n    /* border: none;\n    width: 100%;\n    font-size: 23px;\n    line-height: 32px;\n    opacity: 0.5;\n    background-color: transparent;\n    color: inherit; */\n    width: 100%;\n    font-size: 23px;\n    line-height: 32px;\n    opacity: 0.5;\n    background-color: transparent;\n    border-radius: 4px;\n    border: 1px solid #888;\n    border-bottom: 2px solid #666;\n    transition: 200ms ease;\n    outline: none;\n    &:focus{\n        opacity: 1;\n    }\n    &:disabled{\n        display: none;\n    }\n}\n\n/* Tooltips are disabled */\n\n.project-input_tooltip_3y9t4 {\n    display: none;\n    opacity: 1 !important;\n    background-color: var(--extensions-primary) !important;\n    border: 1px solid var(--ui-black-transparent) !important;\n    box-shadow: 0 0 .5rem var(--shadow) !important;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\n    z-index: 491 !important;\n}\n\n/* Tooltips are disabled */\n\n.project-input_tooltip_3y9t4:after {\n    display: none;\n    border-top-color: var(--extensions-primary) !important;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -2245,9 +2245,9 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   handleUpdateProjectTitle(title, isDefault) {
     if (isDefault || !title) {
-      document.title = "".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_26__["APP_NAME"], " - ").concat(this.props.intl.formatMessage(messages.defaultTitle));
+      document.title = "".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_26__["APP_NAME"]);
     } else {
-      document.title = "".concat(title, " - ").concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_26__["APP_NAME"]);
+      document.title = "".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_26__["APP_NAME"]);
     }
   }
   render() {
@@ -2262,7 +2262,6 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
         isPlayerOnly,
         isRtl,
         projectId
-        /* eslint-enable no-unused-vars */
       } = _this$props,
       props = _objectWithoutProperties(_this$props, _excluded);
     const isHomepage = isPlayerOnly && !isFullScreen;
