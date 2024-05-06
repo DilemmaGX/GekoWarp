@@ -25404,6 +25404,47 @@ const fetchLibrary = async (info, base, tag) => {
   }));
   return data;
 };
+function generateImageFromColor(color) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute('width', '200');
+  svg.setAttribute('height', '200');
+  const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  rect.setAttribute('width', '200');
+  rect.setAttribute('height', '200');
+  rect.setAttribute('fill', color);
+  svg.appendChild(rect);
+  const svgString = new XMLSerializer().serializeToString(svg);
+  const img = new Image();
+  img.src = 'data:image/svg+xml;base64,' + btoa(svgString);
+  return img.src;
+}
+const fetchrLibrary = async () => {
+  const res = await fetch('https://0832.ink/Gallery/extensionList.json');
+  if (!res.ok) {
+    throw new Error("HTTP status ".concat(res.status));
+  }
+  const data = await res.json();
+  let result = [];
+  data.map(extension => extension.compatibility == 'Rsc🍥' ? null : result.push({
+    name: extension.name,
+    nameTranslations: extension.nameTranslations || {},
+    description: extension.description,
+    descriptionTranslations: extension.descriptionTranslations || {},
+    extensionId: extension.id,
+    extensionURL: "https://0832.ink/Gallery/extensions/".concat(extension.id, ".js"),
+    iconURL: extension.color ? generateImageFromColor(extension.color) : extension.image,
+    tags: ['rc'],
+    credits: [extension.author],
+    docsURI: extension.docs ? "https://0832.ink/Gallery/extensions/docs/".concat(extension.id) : null,
+    samples: extension.samples ? extension.samples.map(sample => ({
+      href: "".concat("", "editor?project_url=https://0832.ink/Gallery/samples/").concat(encodeURIComponent(sample), ".sb3"),
+      text: sample
+    })) : null,
+    incompatibleWithScratch: true,
+    featured: true
+  }));
+  return result;
+};
 const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"])({
   extensionTitle: {
     "id": "gui.extensionLibrary.chooseAnExtension",
@@ -25442,7 +25483,7 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
        */
       const autoFetch = () => {
         const gallery = [];
-        const promises = _geko_extension_libraries_js__WEBPACK_IMPORTED_MODULE_9__["default"].map(lib => fetchLibrary(lib.info, lib.base, lib.tag));
+        const promises = _geko_extension_libraries_js__WEBPACK_IMPORTED_MODULE_9__["default"].map(lib => fetchLibrary(lib.info, lib.base, lib.tag)).concat(fetchrLibrary());
         Promise.all(promises).then(results => {
           const mergedGallery = results.reduce((acc, result) => acc.concat(result), gallery);
           this.setState({
@@ -33141,11 +33182,6 @@ const libs = [{
   info: 'https://dilemmagx.github.io/Geko-Extension-Gallery/info.json',
   base: 'https://dilemmagx.github.io/Geko-Extension-Gallery/',
   tag: 'geko'
-}, {
-  name: 'rCodenow',
-  info: 'https://dilemmagx.github.io/Geko-Extension-Gallery/libs/rc.json',
-  base: 'https://0832.ink/Gallery/',
-  tag: 'rc'
 }];
 /* harmony default export */ __webpack_exports__["default"] = (libs);
 

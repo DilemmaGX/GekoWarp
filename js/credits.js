@@ -1872,7 +1872,7 @@ const extensionDevelopers = [{
   username: '-SIPC-'
 }, {
   userBase: 'github',
-  username: '0832'
+  username: '0832k12'
 }, {
   userID: '17235330',
   userBase: 'scratch',
